@@ -1,0 +1,14 @@
+body{
+    background-color: #222;
+    
+}
+.card{
+    background-color: hsl(288, 83%, 77%);
+    height: 60vh;
+    width: 30vw;
+    margin-top: 180px;
+    margin-left: 34%;
+    margin-right: 35%;
+    border-radius: 10px;
+}
+
