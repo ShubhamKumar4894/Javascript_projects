@@ -23,7 +23,7 @@ async function checkWeather(city){
             weatherImg.src = "./Asset/clear.png";
             break;
         case 'Rain':
-            weatherImg.src = "./Asset/rain.png";
+            weatherImg.src = "./Asset/rain.png"
             break;
         case 'Mist':
             weatherImg.src = "./Asset/mist.png";

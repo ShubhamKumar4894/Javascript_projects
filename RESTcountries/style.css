@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    font-family: Nunito,sans-serif;
+    --backgroundColor: white;
+    --elementColor:white;
+    --textColor:black;
+    background-color: var(--backgroundColor);
+
+}
+body.dark{
+    --backgroundColor: hsl(207, 26%, 17%);
+    --elementColor:hsl(209, 23%, 22%);
+    --textColor:white;
+}
+#title{
+    font-weight: 800px;
+}
+.header{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0,0, .2);
+    background-color: var(--elementColor);
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    color: var(--textColor);
+}
+a{
+    text-decoration-line: none;
+    color: inherit;
+}
+.country-container{
+    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    background-color: var(--elementColor);
+}
+.country-card{
+    display: inline-block;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0,0, .2);
+    border-radius: 6px;
+    padding-bottom: 24px;
+    margin-block: 25px;
+    transition: transform 0.2s ease-in-out;
+    background-color: var(--elementColor);
+    
+}
+.country-card:hover{
+    transform: scale(1.02);
+}
+.country-card img{
+    width: 100%;
+}
+.card-text{
+    padding-inline: 16px;
+    color: var(--textColor);
+    
+}
+.card-title{
+    font-size: 22px;
+    margin-block: 24px;
+    color: var(--textColor);
+}
+.card-text p{
+    margin-block: 10px;
+}
+main{
+    padding: 24px;
+}
+.search-field{
+    box-shadow: 0px 2px 4px 0px rgba(0, 0,0, .2);
+    width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.search-field input{
+    padding-block: 12px;
+    border: none;
+    outline: none;
+    padding: inline 13px;
+    width: 90%;
+    background-color: var(--backgroundColor);
+
+}
+.search-field i{
+    font-size: 16px;
+    padding-inline: 6px;
+    color: var(--textColor);
+}
+
+.search-field input::placeholder{
+    color: var(--textColor);
+}
+.search-field input{
+    color: var(--textColor);
+}
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+.filter-by-region{
+    width: 250px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0,0, .2);
+    border-radius: 5px;
+    padding-inline: 8px;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+}
+.filter-by-region option{
+    color: var(--textColor);
+}
+.dark-mode{
+    cursor: pointer;
+}
+
